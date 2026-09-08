@@ -1,0 +1,12 @@
+id = "chic"
+name = "Chic"
+version = "0.1.0"
+schema_version = 1
+authors = ["Martin Paradis <is.martin.paradis@gmail.com>"]
+description = "Syntax highlighting for the Chic programming language."
+repository = "https://github.com/Mapasoft/chic_zed_plugin"
+
+[grammars.chic]
+repository = "https://github.com/Mapasoft/chic_zed_plugin"
+rev = "main"
+path = "tree-sitter-chic"

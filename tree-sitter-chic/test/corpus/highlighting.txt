@@ -1,0 +1,102 @@
+==================
+Language tour
+==================
+
+/// A counter used by the demo.
+Counter : struct {
+    value : i32 = 0
+}
+
+@extension
+increment : func(self : ^Counter, amount : i32 = 1) {
+    self.value += amount
+}
+
+main : func() -> i32 {
+    var counter := Counter {}
+    text := "Chic\n"
+    c_text : cstring = c"hello"
+    rune_value := r'λ'
+    mask := 0xff
+
+    for i in 0..10 step 2 {
+        if i >= 4 && true {
+            counter.increment(i)
+        }
+    }
+
+    return cast<i32>(counter.value)
+}
+
+---
+
+(source_file
+  (documentation_comment)
+  (type_identifier)
+  (declaration_keyword)
+  (identifier)
+  (builtin_type)
+  (operator)
+  (integer_literal)
+  (annotation)
+  (identifier)
+  (declaration_keyword)
+  (identifier)
+  (operator)
+  (type_identifier)
+  (identifier)
+  (builtin_type)
+  (operator)
+  (integer_literal)
+  (identifier)
+  (identifier)
+  (operator)
+  (identifier)
+  (identifier)
+  (declaration_keyword)
+  (operator)
+  (builtin_type)
+  (storage_keyword)
+  (identifier)
+  (operator)
+  (type_identifier)
+  (identifier)
+  (operator)
+  (string_literal
+    (string_content)
+    (escape_sequence))
+  (identifier)
+  (builtin_type)
+  (operator)
+  (c_string_literal
+    (string_content))
+  (identifier)
+  (operator)
+  (rune_literal)
+  (identifier)
+  (operator)
+  (integer_literal)
+  (control_keyword)
+  (identifier)
+  (control_keyword)
+  (integer_literal)
+  (operator)
+  (integer_literal)
+  (control_keyword)
+  (integer_literal)
+  (control_keyword)
+  (identifier)
+  (operator)
+  (integer_literal)
+  (operator)
+  (boolean_literal)
+  (identifier)
+  (identifier)
+  (identifier)
+  (control_keyword)
+  (builtin_keyword)
+  (operator)
+  (builtin_type)
+  (operator)
+  (identifier)
+  (identifier))

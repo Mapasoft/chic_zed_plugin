@@ -1,0 +1,33 @@
+{
+  "grammars": [
+    {
+      "name": "chic",
+      "camelcase": "Chic",
+      "scope": "source.chic",
+      "path": ".",
+      "file-types": ["chic"]
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Tree-sitter grammar for Chic syntax highlighting",
+    "authors": [
+      {
+        "name": "Martin Paradis",
+        "email": "is.martin.paradis@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/Mapasoft/chic_zed_plugin"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "node": false,
+    "python": false,
+    "rust": false,
+    "swift": false,
+    "go": false
+  }
+}

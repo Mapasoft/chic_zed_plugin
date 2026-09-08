@@ -1,0 +1,31 @@
+{
+  "name": "tree-sitter-chic",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for Chic syntax highlighting",
+  "main": "bindings/node",
+  "keywords": [
+    "incremental",
+    "parsing",
+    "tree-sitter",
+    "chic"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^8.3.1",
+    "node-gyp-build": "^4.8.4"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.25.10"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.chic",
+      "file-types": ["chic"],
+      "highlights": ["../languages/chic/highlights.scm"]
+    }
+  ]
+}
