@@ -8,5 +8,5 @@ repository = "https://github.com/Mapasoft/chic_zed_plugin"
 
 [grammars.chic]
 repository = "https://github.com/Mapasoft/chic_zed_plugin"
-rev = "main"
+rev = "c19fd5f9252883c60db383d7a6b7bd8d600ce825"
 path = "tree-sitter-chic"
